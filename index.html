@@ -1,70 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Leonidas Christodoulou</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px auto;
-    max-width: 900px;
-    line-height: 1.6;
-    padding: 0 20px;
-    color: #222;
-}
-
-h1, h2, h3 {
-    color: #111;
-}
-
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #005bbb;
-}
-
-nav {
-    margin-bottom: 30px;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-.footer {
-    margin-top: 60px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leonidas Christodoulou</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
-
 <body>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Leonidas Christodoulou</h1>
+      <p class="subtitle">Applied Machine Learning • Data Science • Explainable AI</p>
 
-<h1>Leonidas Christodoulou</h1>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="Leonidas_Christodoulou_CV.pdf">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<nav>
-<a href="#about">About</a>
-</nav>
+    <main>
+      
+        <section class="card">
+          <h2>About</h2>
+          <p>
+            I am a researcher and data scientist working on applied machine learning and 
+            explainable AI, with a focus on decision-grade modelling in real-world settings. 
+            My research is interdisciplinary, spanning both ML methodology and 
+            applications across domains including agriculture, energy systems, and 
+            scientific data analysis.
+            <br>
+            <br>
+            For more, see my <a href="publications.html">Publications</a> and 
+            <a href="https://scholar.google.com/citations?user=yEaNYfiahdUC&hl=en">Google Scholar</a>.
+          </p>
 
-<div class="section" id="about">
-<h2>About</h2>
-<p>
-I am a researcher and data scientist working on applied machine learning,
-causal inference, and explainable AI, with applications in agriculture,
-energy, and scientific data analysis.
-</p>
+          <h2>Current focus</h2>
+          <div class="badges">
+            <!-- <span class="badge">Applied ML & evaluation</span> -->
+            <span class="badge">Causal ML / DML</span>
+            <span class="badge">Counterfactuals Explanations</span>
+            <span class="badge">Robustness & ML Uncertainty</span>
+            
+          </div>
 
+          <!-- <h2>News</h2>
+          <div class="item">
+            <strong>2026</strong> — Add 2–3 bullets here (paper accepted/submitted, project milestone, talk).
+          </div>
+        </section> -->
+        <h2>News</h2>
 
-<div class="footer">
-Last updated: 2026
-</div>
+            <div class="item">
+            <strong>2026</strong>
+            <ul class="news-list">
+                <li>Paper on the interplay between sources of ML uncertainty and counterfactual 
+                    explainables in XAI published in <a href="https://www.sciencedirect.com/journal/expert-systems-with-applications">ESWA</a> (<a href="https://arxiv.org/abs/2602.00063">arXiv</a>).</li>
+                <li><a href="https://www.linkedin.com/showcase/dairy-project/">DAIRY</a> project well underway.</li>
+            </ul>
+            </div>
 
+      <footer>
+        Last updated: 2026 • Built with static HTML on GitHub Pages
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

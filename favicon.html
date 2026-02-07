@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0">
+<canvas id="c" width="64" height="64"></canvas>
+
+<script>
+const c = document.getElementById("c");
+const ctx = c.getContext("2d");
+ctx.fillStyle = "#0ea5a4"; // your teal color
+ctx.fillRect(0, 0, 64, 64);
+
+// auto-download
+const link = document.createElement("a");
+link.download = "favicon.png";
+link.href = c.toDataURL();
+link.click();
+</script>
+</body>
+</html>
